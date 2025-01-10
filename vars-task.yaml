@@ -1,0 +1,17 @@
+- name: practice on varibale in tasks
+  hosts: local
+  connection: local
+  vars:
+    course: "Aws devops"
+    trainer: "Shiva reddy"
+    duration: "120hrs"
+  tasks:
+  - name: varaibale in tasks
+    vars:
+      course: "Devsecops"
+    ansible.builtin.debug:
+      msg: "mycourse is {{ course }} and my trainer is {{ trainer }} and my course duration is {{ duration }}"
+
+  - name: varaible in tasks
+    ansible.builtin.debug:
+      msg: "mycourse is {{ course }} and my trainer is {{ trainer }} and my course duration is {{ duration }}"
