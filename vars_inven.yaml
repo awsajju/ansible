@@ -1,0 +1,7 @@
+- name: working on variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: working on varibales
+    ansible.builtin.debug:
+      msg: "I'm learning {{ course }} and my trainer is {{ Trainer }} and the couser duration is {{ duration }} " 
