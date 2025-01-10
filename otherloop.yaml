@@ -1,0 +1,14 @@
+- name: looping with other ways
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: installing packages
+    ansible.builtin.debug:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+      - {name: 'git' state= 'present'}
+      - {name: 'mysql' state= 'absent'}
+
+      
