@@ -8,7 +8,7 @@
       name: nginx
       state: present
   - name: startuing the nginx package
-    anisble.builtin.service
+    anisble.builtin.service:
       name: nginx
       state: start
       enabled: yes
