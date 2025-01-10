@@ -5,10 +5,10 @@
   tasks:
   - name: installing nginx package
     anisble.builtin.package:
-      name: "nginx"
+      name: nginx
       state: present
   - name: startuing the nginx package
     anisble.builtin.service
-      name: "nginx"
+      name: nginx
       state: start
       enabled: yes
