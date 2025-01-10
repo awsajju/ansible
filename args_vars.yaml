@@ -1,0 +1,7 @@
+- name: arguments in varaibles
+  hosts: local
+  connection: local
+  tasks:
+  - name: arguments in varaibles
+    ansible.builtin.debug:
+      msg: "I'm learning {{ Course }} and my trainer is {{ Trainer }} and my course duration is {{ Duration }}"
