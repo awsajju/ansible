@@ -6,8 +6,8 @@
   - name: installing packages
     ansible.builtin.debug:
       msg: "{{item}}"
-  loops:
-    - git
-    - mysql
-    - tree
-    - nginx
+    loop:
+      - git
+      - mysql
+      - tree
+      - nginx
