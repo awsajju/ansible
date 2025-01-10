@@ -1,0 +1,16 @@
+- name: play 1 - hellow world
+  hosts: local
+  connection: local
+  tasks:
+    - name: printing hello world
+      ansible.builtin.debug:
+        msg: "hello world"
+
+
+- name: play 2 - learning devops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print learn devops
+    ansible.builtin.debug:
+      msg: "learning devops"
