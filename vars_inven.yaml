@@ -4,4 +4,4 @@
   tasks:
   - name: working on varibales
     ansible.builtin.debug:
-      msg: "I'm learning {{ course }} and my trainer is {{ Trainer }} and the couser duration is {{ duration }} " 
+      msg: "I'm learning {{ Course }} and my trainer is {{ Trainer }} and the couser duration is {{ Duration }} " 
