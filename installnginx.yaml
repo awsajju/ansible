@@ -4,11 +4,11 @@
   become: yes
   tasks:
   - name: installing nginx package
-    anisble.builtin.package:
+    ansible.builtin.package:
       name: nginx
       state: present
   - name: startuing the nginx package
-    anisble.builtin.service:
+    ansible.builtin.service:
       name: nginx
-      state: start
+      state: started
       enabled: yes
