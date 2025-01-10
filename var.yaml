@@ -6,6 +6,6 @@
     Trainier: "Shiva reddy"
     duration: "120HRS"
   tasks:
-  ` name: working on varibales
+  - name: working on varibales
     ansible.builtin.debug:
       msg: "I'm learning {{ course }} and my trainer is {{ trainer }} and the couser duration is {{ duration }} " 
